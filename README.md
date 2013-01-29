@@ -69,3 +69,9 @@ Output using ``JLCustomClassDisassembler``:
     );
 }
 ```
+
+
+Note
+----
+
+* `Must always skip delegate and UIViewcontroller`
