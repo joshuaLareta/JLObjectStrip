@@ -75,3 +75,4 @@ Note
 ----
 
 * `Must always skip delegate and UIViewcontroller`
+* `Must enable ARC`
