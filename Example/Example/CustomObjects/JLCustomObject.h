@@ -14,5 +14,6 @@
 @property (nonatomic, assign) BOOL thisIsPropertyThree;
 @property (nonatomic, strong) NSString *ThisIsPropertyFour; // masked as a string but it is really an NSInteger value
 @property (nonatomic, strong) NSMutableArray *thisIsPropertyFive;
+@property (nonatomic, strong) UIView *thisIsPropertySix;
 
 @end

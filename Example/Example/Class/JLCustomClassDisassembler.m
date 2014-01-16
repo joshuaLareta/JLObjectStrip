@@ -209,6 +209,13 @@
 //get Object from Custom class
 
 -(id)getClassProperties:(id)obj{
+    
+    
+    //If its not an NSObject just return the class name of it
+    if([[obj class]superclass]!=[NSObject class]){
+        return [NSString stringWithFormat:@"%@",[obj class]];
+    }
+    
     id mutatedObject;
 
     unsigned int propertyCount;

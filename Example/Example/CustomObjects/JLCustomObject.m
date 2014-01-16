@@ -14,6 +14,7 @@
 @synthesize thisIsPropertyThree = _thisIsPropertyThree; // bool
 @synthesize ThisIsPropertyFour = _ThisIsPropertyFour;// int
 @synthesize thisIsPropertyFive = _thisIsPropertyFive;// array
+@synthesize thisIsPropertySix = _thisIsPropertySix;// uiview
 
 
 -(id)init{
@@ -24,6 +25,7 @@
         _thisIsPropertyThree = YES;
         _ThisIsPropertyFour = @"10001";
         _thisIsPropertyFive = [@[@"this",@"is",@"property",@"five",@"as",@"an",@"array"]mutableCopy];
+        _thisIsPropertySix = [UIView new];
     }
     return self;
 }
