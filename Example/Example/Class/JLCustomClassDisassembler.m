@@ -237,8 +237,13 @@ SOFTWARE.
 -(id)getClassProperties:(id)obj{
     
     
+  //must skip if its a view or a viewController
+    if([[obj class]isSubclassOfClass:[UIView class]]||[[obj class]isSubclassOfClass:[UIViewController class]]){
+        return [NSString stringWithFormat:@"%@",[obj class]];
+    }
+    
     //If its not an NSObject just return the class name of it
-    if([[obj class]superclass]!=[NSObject class]){
+    if(![obj isKindOfClass:[NSObject class]]){
         return [NSString stringWithFormat:@"%@",[obj class]];
     }
     
