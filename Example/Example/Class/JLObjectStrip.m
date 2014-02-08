@@ -1,5 +1,5 @@
 //
-//  JLCustomClassDisassembler.m
+//  JLObjectStrip.m
 //
 //  Created by Joshua Lareta
 
@@ -29,9 +29,9 @@ SOFTWARE.
 
 */
 
-#import "JLCustomClassDisassembler.h"
+#import "JLObjectStrip.h"
 #import <objC/runtime.h>
-@implementation JLCustomClassDisassembler
+@implementation JLObjectStrip
 @synthesize attributeNamingMask;
 @synthesize attrSkipList;
 @synthesize objectTypeChange;

@@ -1,5 +1,5 @@
 //
-//  JLCustomClassDisassembler.h
+//  JLObjectStrip.h
 //
 //  Created by Joshua Lareta
 
@@ -41,7 +41,7 @@ typedef enum {
     KObjectParserToLong = 3,
 }KObjectParserDataType;
 
-@interface JLCustomClassDisassembler : NSObject {
+@interface JLObjectStrip : NSObject {
 }
 
 /*

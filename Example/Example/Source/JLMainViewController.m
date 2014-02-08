@@ -8,7 +8,7 @@
 
 #import "JLMainViewController.h"
 #import "JLCustomObject.h"
-#import "JLCustomClassDisassembler.h"
+#import "JLObjectStrip.h"
 
 @interface JLMainViewController ()
 
@@ -31,7 +31,7 @@
     
     JLCustomObject *customObject = [JLCustomObject new];
     
-    JLCustomClassDisassembler *disassembler = [JLCustomClassDisassembler new];
+    JLObjectStrip *disassembler = [JLObjectStrip new];
     
     
 /*

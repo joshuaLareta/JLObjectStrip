@@ -16,9 +16,9 @@
 		42151BAA18863C12007EA485 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 42151BA918863C12007EA485 /* Default.png */; };
 		42151BAC18863C12007EA485 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 42151BAB18863C12007EA485 /* Default@2x.png */; };
 		42151BAE18863C12007EA485 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 42151BAD18863C12007EA485 /* Default-568h@2x.png */; };
-		42151BC118863D11007EA485 /* JLCustomClassDisassembler.m in Sources */ = {isa = PBXBuildFile; fileRef = 42151BBE18863D11007EA485 /* JLCustomClassDisassembler.m */; };
 		42151BC718863D6F007EA485 /* JLMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42151BC618863D6F007EA485 /* JLMainViewController.m */; };
 		42151BCB18863DE6007EA485 /* JLCustomObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 42151BCA18863DE6007EA485 /* JLCustomObject.m */; };
+		42A433FE18A655F200E0DF48 /* JLObjectStrip.m in Sources */ = {isa = PBXBuildFile; fileRef = 42A433FD18A655F200E0DF48 /* JLObjectStrip.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,12 +35,12 @@
 		42151BA918863C12007EA485 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		42151BAB18863C12007EA485 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		42151BAD18863C12007EA485 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		42151BBD18863D11007EA485 /* JLCustomClassDisassembler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLCustomClassDisassembler.h; sourceTree = "<group>"; };
-		42151BBE18863D11007EA485 /* JLCustomClassDisassembler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLCustomClassDisassembler.m; sourceTree = "<group>"; };
 		42151BC518863D6F007EA485 /* JLMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JLMainViewController.h; path = Source/JLMainViewController.h; sourceTree = "<group>"; };
 		42151BC618863D6F007EA485 /* JLMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JLMainViewController.m; path = Source/JLMainViewController.m; sourceTree = "<group>"; };
 		42151BC918863DE6007EA485 /* JLCustomObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JLCustomObject.h; path = CustomObjects/JLCustomObject.h; sourceTree = "<group>"; };
 		42151BCA18863DE6007EA485 /* JLCustomObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JLCustomObject.m; path = CustomObjects/JLCustomObject.m; sourceTree = "<group>"; };
+		42A433FC18A655F200E0DF48 /* JLObjectStrip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLObjectStrip.h; sourceTree = "<group>"; };
+		42A433FD18A655F200E0DF48 /* JLObjectStrip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLObjectStrip.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,8 +113,8 @@
 		42151BBC18863D11007EA485 /* Class */ = {
 			isa = PBXGroup;
 			children = (
-				42151BBD18863D11007EA485 /* JLCustomClassDisassembler.h */,
-				42151BBE18863D11007EA485 /* JLCustomClassDisassembler.m */,
+				42A433FC18A655F200E0DF48 /* JLObjectStrip.h */,
+				42A433FD18A655F200E0DF48 /* JLObjectStrip.m */,
 			);
 			path = Class;
 			sourceTree = "<group>";
@@ -206,9 +206,9 @@
 			files = (
 				42151BA418863C12007EA485 /* main.m in Sources */,
 				42151BA818863C12007EA485 /* JLAppDelegate.m in Sources */,
-				42151BC118863D11007EA485 /* JLCustomClassDisassembler.m in Sources */,
 				42151BC718863D6F007EA485 /* JLMainViewController.m in Sources */,
 				42151BCB18863DE6007EA485 /* JLCustomObject.m in Sources */,
+				42A433FE18A655F200E0DF48 /* JLObjectStrip.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,6 +325,7 @@
 				42151BB318863C12007EA485 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
