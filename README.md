@@ -1,4 +1,4 @@
-JLCustomClassDisassembler
+JLObjectStrip
 =========================
 
 
@@ -8,23 +8,23 @@ A class that will convert custom NSObject and its property to JSON compatible ob
 
 Properties
 ----------
-* ```JLCustomClassDisassembler.attrSkipList```
+* ```JLObjectStrip.attrSkipList```
       * List of attribute/property names that wants to be skipped during the conversion 
       * usage: ```instance.attrSkipList = [NSMutableArray arrayWithObjects:@"property1",@"property2", nil];```
-* ```JLCustomClassDisassembler.objectTypeChange```
+* ```JLObjectStrip.objectTypeChange```
       * Dictionary with values for the desired type (``float``,``double``,``int``,``longlong``)
       * Enum values : ```KObjectParserToInteger```,```KObjectParserToFloat```,```KObjectParserToDouble```,```KObjectParserToLong```
       * Usage: ```instance.objectTypeChange = [NSMutableDictionary dictionaryWithObject:[NSNumber numberWithInt:KObjectParserToInteger] forKey:@"oldPropertyName"];```
-* ```JLCustomClassDisassembler.attributeNamingMask```
+* ```JLObjectStrip.attributeNamingMask```
       * Dictionary with values for the attribute/property name change
       * usage:```instance.attributeNamingMask =  [NSMutableDictionary dictionaryWithObject:@"newPropertyName" forKey:@"oldPropertyName"];```
 
 Usage
 ------
 
-1) Include the JLCustomClassDisassembler.h to your project.
+1) Include the JLObjectStrip.h to your project.
 
-2) Instantiate a new ```JLCustomClassDisassembler *instance = [JLCustomClassDisassembler new];``` object.
+2) Instantiate a new ```JLObjectStrip *instance = [JLObjectStrip new];``` object.
 
 3) Call ```id processedNSObject = [instance disassembleNSObject:object]```
 
@@ -54,7 +54,7 @@ Custom NSObject with different property type
 
 ```
 
-Output using ``JLCustomClassDisassembler``:
+Output using ``JLObjectStrip``:
 
 ```
  {
