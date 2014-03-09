@@ -70,6 +70,9 @@ Output using ``JLObjectStrip``:
 }
 ```
 
+Credits
+-------
+I'd appreciate it to mention the use of this code in your project. On a website, in an about page, in the app itself, whatever. Or let me know by email or through github. It's nice to know where that it is being used.
 
 Note
 ----
